@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_Service"
+        android:text="Turn On/Off"
+        android:layout_width="match_parent"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Charge Preserver v1.0.1 by darken\n "
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When Charge Preserver is activated, it will turn airplane mode on if your android is not on a power source and turn airplane mode off when it is connected to a power source.\nAirplanemode will disable any wireless connection to ensure minimal battery drain while off the charger.\n\n "
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extra options:"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <CheckBox
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_ScreenOn"
+                android:text="Screen always on (On Charger)"
+                android:layout_width="match_parent"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
